@@ -15,13 +15,12 @@ class Train:
         print "model saved at path + " + model_path
 
 
-class Predict:
-    global model
+def load(model):
+    model = pickle.load(open(model, 'rb'))
+    print "model loaded successfully , ready to predict unseen data"
+    return model
 
-    def __init__(self, model):
-        self.model = pickle.load(open(model, 'rb'))
-        print "model loaded successfully , ready to predict unseen data"
 
-    def predict_label(self, vec):
-        l = self.model.predict(vec)
-        print l
+def predict_label(model, vec):
+    l = model.predict(vec)
+    return l

@@ -1,0 +1,11 @@
+delight
+irritation
+anger
+disappoint
+happy
+complaint
+neutral
+thanks
+cheated
+worry
+confuse

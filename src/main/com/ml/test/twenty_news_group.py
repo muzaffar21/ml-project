@@ -15,4 +15,4 @@ X_new_counts = count_vect.transform(docs_new)
 X_new_tfidf = tfidf_transformer.transform(X_new_counts)
 print X_new_tfidf
 predicted = clf.predict(X_new_tfidf)
-print predicted
+print list(predicted)
