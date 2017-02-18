@@ -29,7 +29,7 @@ def main(model_path, vector_path, class_file):
 
 
 if __name__ == '__main__':
-    directory = "/disk2/home/muzaffar/PycharmProjects/ski_learn/resources/"
+    directory = "/disk2/home/muzaffar/PycharmProjects/ml-project/resources/"
     main(directory + "model.txt",
          directory + "vectorizer.pickle",
          directory + "class_file.txt")

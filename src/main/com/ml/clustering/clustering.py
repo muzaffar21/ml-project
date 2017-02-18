@@ -41,5 +41,5 @@ def main(file_path, result_path):
 
 
 if __name__ == '__main__':
-    directory = "/disk2/home/muzaffar/PycharmProjects/ski_learn/resources/"
+    directory = "/disk2/home/muzaffar/PycharmProjects/ml-project/resources/"
     main(directory + "clustering-data.lst", directory + "clusters.json")

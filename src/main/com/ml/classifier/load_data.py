@@ -57,7 +57,7 @@ def main(training_file, model_file, vector_file, class_file):
 
 
 if __name__ == '__main__':
-    directory = "/disk2/home/muzaffar/PycharmProjects/ski_learn/resources/"
+    directory = "/disk2/home/muzaffar/PycharmProjects/ml-project/resources/"
     main(directory + "trainingdata.list",
          directory + "model.txt",
          directory + "vectorizer.pickle",
