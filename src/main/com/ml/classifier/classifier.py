@@ -1,3 +1,5 @@
+__author__ = "Shah Muzaffar"
+
 from sklearn.naive_bayes import MultinomialNB
 import pickle
 

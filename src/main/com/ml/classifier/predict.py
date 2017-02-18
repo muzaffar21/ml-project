@@ -1,4 +1,5 @@
 # coding=utf-8
+__author__ = "Shah Muzaffar"
 
 import classifier
 import text_vectorizer

@@ -1,3 +1,5 @@
+__author__ = "Shah Muzaffar"
+
 from text_vectorizer import Vectorizer
 from classifier import Train
 import operator
