@@ -6,7 +6,7 @@ from src.main.com.ml.classifier.text_vectorizer import Vectorizer
 
 
 def run_k_means(vec_matrix,num_clusters):
-    k_means = KMeans(n_clusters=, random_state=0).fit(vec_matrix)
+    k_means = KMeans(n_clusters=num_clusters, random_state=0).fit(vec_matrix)
     clusters = k_means.labels_
     return clusters
 
