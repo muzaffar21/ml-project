@@ -1,4 +1,2 @@
 .idea/
-trainingdata.list
-vectorizer.pickle
-model.txt
+resources/

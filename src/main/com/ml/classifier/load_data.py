@@ -1,6 +1,9 @@
-from  text_vectorizer import VectorizerTrainer
+from text_vectorizer import Vectorizer
 from classifier import Train
 import operator
+import sys
+
+sys.path.append()
 
 
 class load_data:
@@ -39,7 +42,7 @@ class load_data:
 
 def main(training_file, model_file, vector_file, class_file):
     ld = load_data()
-    vec = VectorizerTrainer()
+    vec = Vectorizer()
     train = Train()
     ld.load_data(training_file)
     ld.write_class_map(class_file)
@@ -47,7 +50,7 @@ def main(training_file, model_file, vector_file, class_file):
     if len(ld.label_array) != len(ld.corpus):
         print "exception occurred while loading data ::::::,size of data  set and label set un equal"
     else:
-        matrix = vec.generate_vector_matrix(ld.corpus, vector_file)
+        matrix = vec.generate_vector_matrix(ld.corpus, vector_file, True)
         print 'vectors saved, going to train model'
         train.create_model(matrix, ld.label_array, model_file)
         print ".......................done training......................"
